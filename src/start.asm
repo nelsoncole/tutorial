@@ -27,7 +27,9 @@
         	extern main
     		call main  ; Executa código em C
 
-    	HLT ; Coloca o CPU para dormir
+   LP:
+            HLT ; Coloca o CPU para dormir
+            JMP LP
 	section .bss
 	global _pilha
      resb 8192 ; 8 KiB
