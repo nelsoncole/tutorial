@@ -27,7 +27,7 @@
         	extern main
     		call main  ; Executa código em C
 
-    	jmp $ ; Loop infinito
+    	HLT ; Coloca o CPU para dormir
 	section .bss
 	global _pilha
      resb 8192 ; 8 KiB
